@@ -19,7 +19,9 @@
 
 <body>
     @include('layouts.sidebar')
-    @yield('content')
+    <div style="margin-left: 250px !important;">>
+        @yield('content')
+    </div>
 </body>
 
 </html>
