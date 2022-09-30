@@ -2,7 +2,7 @@
 
 @section('content')
     <div>
-        <h3>Ini Judul ketiga</h3>
-        <p>Ini adalah paragraf</p>
+        <h3>Ini Judul</h3>
+        <p>Ini adalah halaman home</p>
     </div>
 @endsection

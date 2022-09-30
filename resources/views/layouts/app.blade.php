@@ -7,19 +7,21 @@
 
     <title>{{ $title }} | OS</title>
 
-
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
     <script src="bootstrap-5.0.2/js/bootstrap.min.js"></script>
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link href="css/all.css" rel="stylesheet">
     <link href="css/fontawesome.min.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     @include('layouts.sidebar')
-    <div style="margin-left: 250px !important;">>
+    <div style="margin-left: 250px !important;">
         @yield('content')
     </div>
 </body>
