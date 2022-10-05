@@ -221,3 +221,33 @@
         margin-left: 15px;
     }
 }
+
+
+/* Testing */
+.bg-pink {
+    background-color: pink;
+}
+
+.bg-aqua {
+    background-color: aqua;
+}
+
+/* Header */
+.header {
+    height: 50px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header .profile {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 40px;
+}

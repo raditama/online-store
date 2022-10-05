@@ -16,17 +16,15 @@
             <a href="/order" class="nav-item nav-link {{ Request::path() === "order" ? 'active' : '' }}">
                 <i class="fa fa-bag-shopping me-3"></i>Order
             </a>
-            {{-- <div class="nav-item dropdown">
+            <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                    <i class="far fa-file-alt me-2"></i>Pages
+                    <i class="far fa-file-alt me-2"></i>Order
                 </a>
                 <div class="dropdown-menu bg-transparent border-0">
-                    <a href="signin.html" class="dropdown-item">Sign In</a>
-                    <a href="signup.html" class="dropdown-item">Sign Up</a>
-                    <a href="404.html" class="dropdown-item">404 Error</a>
-                    <a href="blank.html" class="dropdown-item">Blank Page</a>
+                    <a href="/process" class="dropdown-item">Process</a>
+                    <a href="/history" class="dropdown-item">History</a>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </nav>
 </div>

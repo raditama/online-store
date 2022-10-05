@@ -17,12 +17,16 @@
 
     <!-- Custom -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="{{ url('sources/images/app-store.png') }}">
 </head>
 
 <body>
-    @include('layouts.sidebar')
+    @include('layouts.sidebar.index')
     <div style="margin-left: 250px !important;">
-        @yield('content')
+        @include('layouts.header.index')
+        <div style="margin-top: 90px !important;">
+            @yield('content')
+        </div>
     </div>
 </body>
 
