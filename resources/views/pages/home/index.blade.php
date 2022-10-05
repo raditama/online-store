@@ -12,32 +12,31 @@
         <table class="table">
             <thead class="thead-light">
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Poduct Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+                @foreach ($product as $p)
+                    <tr>
+                        <td scope="row">{{ $p['id'] }}</td>
+                        <td scope="row">{{ $p['name'] }}</td>
+                        <td scope="row">{{ $p['category'] }}</td>
+                        <td scope="row">{{ $p['stock'] }}</td>
+                        <td scope="row">{{ $p['price'] }}</td>
+                        <td scope="row"><button onclick="modalEdit()">Edit</button></td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
+    <script>
+        function modalEdit() {
+            alert("Modal edit is not ready!");
+        }
+    </script>
 @endsection
